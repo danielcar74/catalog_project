@@ -35,7 +35,7 @@ Para mitigar vulnerabilidades em aplicações web (como usuários que tentem ins
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto (usado IDE eclipse)
 
 ```text
 catalogo-midias/
