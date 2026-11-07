@@ -1,0 +1,33 @@
+Como Executar o Projeto Localmente
+
+1. Pré-requisitosJava Development Kit (JDK) instalado.
+   Servidor Apache Tomcat configurado em sua IDE (Eclipse, IntelliJ, etc.).
+   Servidor MySQL instalado e rodando[cite: 25, 30].
+2. Configuração do Banco de Dados
+Abra o seu cliente MySQL e execute o script abaixo para criar a tabela:
+
+################################################
+SQL
+
+CREATE DATABASE IF NOT EXISTS catalogo_midias;
+USE catalogo_midias;
+
+CREATE TABLE item_midia (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    autor_diretor VARCHAR(255),
+    ano_lancamento INT,
+    genero VARCHAR(100),
+    sinopse TEXT,
+    tipo_midia VARCHAR(50) NOT NULL
+);
+################################################
+
+3. Execução
+	1.Clone este repositório ou importe o projeto na sua IDE como um projeto Dynamic Web Project.
+	2.Verifique se as credenciais de acesso ao MySQL na classe de conexão (ConexaoFactory.java) estão corretas para o seu ambiente local.
+	3.Clique com o botão direito no projeto, selecione Run As > Run on Server e escolha o Apache Tomcat.
+	
+Autor do Projeto
+Desenvolvido por Daniel Graziano de Carvalho
+Aluno de Ciência da Computação - 7o. semestre
