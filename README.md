@@ -30,7 +30,7 @@ O projeto foi construído com sistemas gratuitos e serviu o propósito de aplica
 
 ## Segurança da Informação
 
-Para mitigar vulnerabilidades em aplicações web (como usuários que tentem inserir dados e comandos no banco de dados relacional) - o sistema foi estruturado seguindo as seguintes práticas de segurança:
+Para tratar vulnerabilidades em aplicações web (como usuários que tentem inserir dados e comandos no banco de dados relacional) - o sistema foi estruturado seguindo as seguintes práticas de segurança:
 * **Prevenção contra SQL Injection:** Todas as operações de persistência e consulta utilizam **`PreparedStatement`**. Isso garante que as entradas fornecidas pelos usuários sejam tratadas apenas como dados e nunca como códigos executáveis.
 
 ---
