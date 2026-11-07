@@ -1,23 +1,23 @@
-# 📚 Sistema de Catálogo de Mídias (Java Web CRUD)
+# PROJETO INTEGRADOS TRANSDISCIPLINAR (PIT): Sistema de Catálogo de Mídias (Java Web CRUD)
 
-Aplicação web desenvolvida como Projeto Integrador Transdisciplinar (PIT) em Ciência da Computação, com o objetivo de gerenciar um catálogo de mídias (livros, séries e filmes) utilizando Java, Servlets, JSP, JDBC e MySQL[cite: 8, 25].
+Aplicação web desenvolvida POR Daniel Graziano de Carvalgo como Projeto Integrador Transdisciplinar (PIT) em Ciência da Computação. O objetivo é criar uma solução em Java para gerenciar um catálogo de mídias (livros e filmes). O stack utilizado foi Java, Servlets, JSP, JDBC e MySQL.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-O projeto foi construído sem o uso de frameworks pesados, aplicando os conceitos fundamentais da tecnologia Java para web:
-* **Linguagem:** Java (JDK 17+)[cite: 8, 11]
+O projeto foi construído com sistemas gratuitos e serviu o propósito de aplicar os conceitos fundamentais da tecnologia Java para web:
+* **Linguagem:** Java (JDK 17+)
 * **Arquitetura:** Padrão MVC (Model-View-Controller)
-* **Controladores:** Java Servlets[cite: 25]
-* **Apresentação (View):** JavaServer Pages (JSP) com HTML5 e CSS3 moderno[cite: 25]
-* **Persistência:** JDBC (Java Database Connectivity)[cite: 25]
+* **Controladores:** Java Servlets
+* **Apresentação:** JavaServer Pages (JSP) e HTML
+* **Persistência:** JDBC (Java Database Connectivity)
 * **Banco de Dados:** MySQL
-* **Servidor de Aplicação:** Apache Tomcat[cite: 25]
+* **Servidor de Aplicação:** Apache Tomcat
 
 ---
 
-## ⚙️ Funcionalidades Principais (CRUD)
+## Funcionalidades Principais (CRUD)
 
 * **Create (Cadastro):** Formulário completo para registrar novos itens informando título, autor/diretor, ano de lançamento, gênero, sinopse e tipo de mídia[cite: 8, 21].
 * **Read (Consulta e Listagem):** Exibição em tabela dinâmica de todos os itens cadastrados no banco de dados[cite: 8, 21].
@@ -28,10 +28,10 @@ O projeto foi construído sem o uso de frameworks pesados, aplicando os conceito
 
 ---
 
-## 🔒 Segurança da Informação
+## Segurança da Informação
 
-Com o objetivo de mitigar vulnerabilidades comuns em aplicações web, o sistema foi estruturado seguindo boas práticas de segurança[cite: 24, 27]:
-* **Prevenção contra SQL Injection:** Todas as operações de persistência e consulta utilizam **`PreparedStatement`** do JDBC, garantindo que as entradas fornecidas pelos usuários sejam tratadas estritamente como dados literais e nunca como códigos executáveis pelo SGBD[cite: 27, 36, 37].
+Para mitigar vulnerabilidades em aplicações web (como usuários que tentem inserir dados e comandos no banco de dados relacional) - o sistema foi estruturado seguindo as seguintes práticas de segurança:
+* **Prevenção contra SQL Injection:** Todas as operações de persistência e consulta utilizam **`PreparedStatement`**. Isso garante que as entradas fornecidas pelos usuários sejam tratadas apenas como dados e nunca como códigos executáveis.
 
 ---
 
@@ -39,13 +39,13 @@ Com o objetivo de mitigar vulnerabilidades comuns em aplicações web, o sistema
 
 ```text
 catalogo-midias/
-├── src/main/java/
-│   ├── controller/     # Servlets (Controladores HTTP)
-│   ├── dao/            # Classes de Acesso a Dados (JDBC / PreparedStatement)
-│   └── model/          # Classes de Domínio (Beans / POJOs)
-└── src/main/webapp/
-    ├── index.jsp           # Página inicial do sistema
-    ├── listar_produtos.jsp # Tabela de listagem e barra de busca
-    ├── novo-produto.jsp    # Formulário de cadastro
-    ├── editar-item.jsp     # Formulário de edição
-    └── buscar-item.jsp     # Página de visualização de detalhes
+├─ src/main/java/
+│  ├── controller/         # Servlets (Controladores HTTP)
+│  ├── dao/                # Classes de Acesso a Dados (JDBC / PreparedStatement)
+│  └── model/              # Classes de Domínio (Beans / POJOs)
+└─ src/main/webapp/
+   ├── index.jsp           # Página inicial do sistema
+   ├── listar_produtos.jsp # Tabela de listagem e barra de busca
+   ├── novo-produto.jsp    # Formulário de cadastro
+   ├── editar-item.jsp     # Formulário de edição
+   └── buscar-item.jsp     # Página de visualização de detalhes
